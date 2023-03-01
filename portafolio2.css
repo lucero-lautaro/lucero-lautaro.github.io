@@ -1,0 +1,875 @@
+:root {
+--nada: none;
+--nada2: none;
+--nada3: none;
+--nada4: none;
+--nada5: none;
+--altoGoogle: 285px ;
+--altoArgentina:285px ;
+--altoTicmas: 285px ;
+--botonGoogle: visible;
+--botonArg: visible;
+--botonTicmas: visible;
+--oculto: -150px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.indice-responsive {
+  background: black;
+  width: auto;
+  height: 50px;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+
+}
+
+.indice-responsive .barras {
+  cursor: pointer;
+  background: #1CB698;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  color: white;
+  display: block;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.indice-responsive ul li {
+ display: none;
+ text-decoration: none;
+  text-align: center;
+  margin: 15px 0;
+  padding: 3px;
+  color: black;
+  transition: .5s;
+}
+
+.indice-responsive ul li u button {
+cursor: pointer;
+text-decoration: none;
+  text-align: center;
+  margin: 15px 0;
+  margin-bottom: 10px;
+  padding: 3px;
+  position: relative;
+  bottom: 3px;
+  background: transparent;
+  color: white;
+  transition: .5s;}
+
+.indice-responsive ul li a:hover {
+  color: seagreen;
+}
+
+.indice-responsive ul li u button:hover {
+  color: seagreen;
+}
+
+.indice-responsive ul{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  height: 150px;
+  background: white;
+}
+
+
+
+.indice {
+  background: black;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.indice header {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.indice header ul {
+  display: flex;
+  text-decoration: none;
+  margin: auto;
+}
+
+.indice header ul li a {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 15px;
+  padding: 3px;
+  color: white;
+  transition: .5s;
+}
+
+.indice header ul li u button {
+cursor: pointer;
+text-decoration: none;
+  text-align: center;
+  margin: 0 15px;
+  margin-bottom: 10px;
+  padding: 3px;
+  position: relative;
+  bottom: 3px;
+  background: transparent;
+  color: white;
+  transition: .5s;
+}
+
+.indice header ul li a:hover {
+  color: seagreen;
+}
+
+.indice header ul li u button:hover {
+  color: seagreen;
+}
+
+
+.inicio {
+  background: url("https://tinypic.host/images/2023/02/28/lineas-binarias-verdes.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 110vh;
+  /*width: 100%;*/
+  /*justify-content: space-between;
+  align-self: center;*/
+}
+
+.inicio .contenido-banner {
+  padding: 20px;
+  margin:auto;
+  margin-top: 80px;
+  height: 610px;
+  border-radius: 40px;
+  width: 450px;
+  text-align: center;
+  background-color: #1e2326;
+}
+
+.inicio .contenido-banner .yo {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 10px solid #1CB698;
+  border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+  margin-top: 25px;
+  font-size: 42px;
+}
+
+.inicio .contenido-banner h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.inicio .contenido-banner .redes a img {
+  border: 3px solid #1CB698;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  margin: 20px 10px;
+  transition: 1s;
+}
+
+.inicio .contenido-banner .redes a img:hover {
+  width: 45px;
+  height: 45px;
+}
+
+.sobremi {
+  background: black;
+  color: white;
+  padding: 50px 20px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.sobremi .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobremi h2 {
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.sobremi .contenido-seccion p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.sobremi .fila {
+display: flex;
+}
+
+.sobremi .fila h3 {
+  font-size: 38px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.sobremi .fila .col {
+  margin: 0 30px;
+}
+
+/*.sobremi .fila .col .derecha {
+  margin: 0 10px;
+  width: 40%;
+}*/
+
+.sobremi .fila ul {
+  list-style: none;
+}
+
+.sobremi .fila ul li {
+  font-size: 28px;
+  margin: 60px 0;
+
+}
+
+.sobremi .fila ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sobremi .fila ul li a:hover {
+  font-size: 33px;
+  text-decoration: underline;
+}
+
+.sobremi .fila ul li strong {
+  display: inline-block;
+  color: #1CB698;
+  width: 130px;
+  text-align: right;
+  margin-right: 6px;
+}
+
+.sobremi .fila .cumple{
+  position: relative;
+  right: 20px;
+}
+
+.sobremi .fila .col .mapay {
+  width: 450px;
+  height: 450px;
+  transition: .5s;
+}
+
+.sobremi .fila .col img {
+  width: 400px;
+  height: 400px;
+  transition: .5s;
+  
+}
+
+.sobremi .fila .col .mapay:hover, .sobremi .fila .col .mapay img:hover {
+  width: 450px;
+  height: 450px;
+  filter: opacity(0.7) drop-shadow(0 0 0 #1CB698);
+}
+
+.sobremi .fila .col .direccion {
+  z-index: 200;
+  position: relative;
+  top: -45%;
+  left: 30%;
+  width: 150px;
+  height: 100px;
+  background: #1e2326;
+  padding: 5px;
+}
+
+.sobremi .fila .col .direccion p {
+  margin: 5px;
+  text-align: center;
+}
+
+
+
+.habilidades {
+  background: #252A2E;
+  color: white;
+  padding: 50px 20px;
+  margin: auto;
+}
+
+.contenido-seccion {
+  width: 1100px;
+  margin: auto;
+  height: 840px;
+}
+
+.habilidades h2 {
+  font-size: 58px;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.cuadro {
+  display: flex;
+  width: 100%;
+}
+
+.cuadro .fila {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 65px;
+}
+
+.cuadro .fila .columna {
+  display: flex;
+   align-items: center;
+   padding: 40px 0;
+}
+
+.cuadro .fila .columna .col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+.cuadro .fila .columna .col .tira {
+  display: flex;
+  margin: 48px 0;  
+}
+
+.habilidades h3 {
+  font-size: 38px;
+  margin-bottom: 0;
+  text-align: left;}
+
+.habilidades .tecnicas {
+  text-align: right;
+}
+
+.habilidades .skills {
+  font-size: 30px;
+  text-align: right;
+  margin: 50px 5px;
+}
+
+
+ 
+/*.skills .skills > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: -5px;
+  font-size: 35px;
+  text-align: right;
+}*/
+
+.habilidades .col .cuadrado {
+  width: 35px;
+  height: 35px;
+  border: solid #1CB698 1px;
+  margin: 2px;
+  
+}
+
+.a {
+  background: var(--nada);
+}
+
+.b {
+  background: var(--nada2);
+}
+
+.c {
+  background: var(--nada3);
+}
+
+.d {
+  background: var(--nada4);
+}
+
+.e {
+  background: var(--nada5);
+}
+
+.todo {
+ display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background: black;
+}
+
+.tituloFormacion {
+  font-size: 52px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.cursoGoogle {
+  width: 25%;
+  height: var(--altoGoogle);
+  background: #1e2326;
+  color: white;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.cursoTicmas {
+  width: 25%;
+  height: var(--altoTicmas);
+  background: #1e2326;
+  color: white;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.cursoArg {
+  width: 25%;
+  height: var(--altoArgentina);
+  background: #1e2326;
+  color: white;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.cursos .img {
+ width: 300px;
+ height: 155px;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ flex-direction: column;
+
+}
+
+.cursos .titulo {
+  margin-top: 15px;
+}
+
+.temario {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.flechaAGoogle {
+width: 40px;
+height: 30px;
+background:#1CB698;
+margin: 15px 5px;
+border-radius: 20px;
+ cursor: pointer;
+  visibility: var(--botonGoogle);
+  transition: .5;
+}
+
+.flechaBGoogle {
+width: 40px;
+height: 30px;
+background:#1CB698;
+margin: 5px;
+border-radius: 20px;
+ cursor: pointer;
+ transition: .5;
+}
+
+.flechaAArg {
+  width: 40px;
+height: 30px;
+background:#1CB698;
+margin: 15px 5px;
+border-radius: 20px;
+  margin-top: 59px;
+   cursor: pointer;
+  visibility: var(--botonArg);
+  transition: .5;
+}
+
+.flechaBArg {
+width: 40px;
+height: 30px;
+background:#1CB698;
+margin: 5px;
+border-radius: 20px;
+ cursor: pointer;
+ transition: .5;
+}
+
+.flechaATicmas {
+width: 40px;
+height: 30px;
+background:#1CB698;
+margin: 15px 5px;
+border-radius: 20px;
+ cursor: pointer;
+visibility: var(--botonTicmas);
+transition: .5;
+}
+
+.flechaBTicmas {
+width: 40px;
+height: 30px;
+background:#1CB698;
+margin: 5px;
+border-radius: 20px;
+ cursor: pointer;
+ transition: .5s;
+}
+
+.flechaAGoogle:hover {
+  background: seagreen;
+}
+
+.flechaBGoogle:hover {
+  background: seagreen;
+}
+
+.flechaAArg:hover {
+  background: seagreen;
+}
+
+.flechaBArg:hover {
+  background: seagreen;
+}
+
+.flechaATicmas:hover {
+  background: seagreen;
+}
+
+.flechaBTicmas:hover {
+  background: seagreen;
+}
+
+
+.curso .texto {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+
+.contacto {
+  background: black;
+  color: white;
+}
+
+.contacto .titulos {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.contacto h2 {
+  font-size: 52px;
+  padding: 20px 0;
+}
+
+.contacto p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.contacto .fila {
+   display: flex;
+  width: 40%;
+  height: 400px;
+  padding: 18px;
+  border: none;
+  margin: auto;
+  margin-top: 20px;
+  background: #1e2326;
+  color: white;
+  font-size: 20px;
+}
+
+.contacto .columna input, .contacto .columna textarea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  margin-left: 10px;
+}
+
+.contacto .boton input {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  left: 270px;
+  bottom: 120px;
+  border: 2px solid white;
+  width: fit-content;
+  font-size: 35px;
+  border-radius: 50px;
+  background-color: #1CB698;
+  color: white;
+  z-index: 10;
+  padding: 10px;
+  transition: .5s;
+}
+
+.contacto .boton input:hover {
+  background-color: seagreen;
+}
+
+
+footer {
+background-color: transparent;
+color: white;
+padding: 50px 0 30px 0;
+text-align: center;
+position: relative;
+width: 100%;
+height: 200px;
+}
+
+footer .arriba {
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: #1CB698;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  line-height: 50px;
+  font-size: 40px;
+  transition: .5s;
+  margin-top: 0;
+}
+
+footer .arriba:hover {
+ color: seagreen;
+ font-size: 50px;
+}
+
+
+@media screen and (max-width: 390px) {
+
+ body .indice {
+    display: none;
+  }
+
+.indice-responsive {
+  display: block;
+  width: 390px;
+  }
+
+.indice-responsive .barras {
+  right: 0;
+}
+
+.indice-responsive ul {
+  background: black;
+  position: absolute;
+  right: 0;
+  top: var(--oculto);
+  margin: auto;
+}
+
+.indice-responsive ul li {
+  display: flex;
+  margin: 0 0;
+}
+
+.indice-responsive ul li a {
+  color: white;
+}
+
+.indice-responsive ul li u button {
+  margin: 0 0;
+  border: transparent;
+}
+
+.inicio {
+  width: 390px;
+  height: auto;
+  align-content: center;
+  padding-bottom: 60px;
+}
+
+.sobremi .fila {
+flex-direction: column;
+}
+
+.sobremi .presentacion {
+  margin-top: 10px;
+  width: 350px;
+}
+
+.sobremi .fila .izquierda {
+  width: 390px;
+  text-align: left;
+}
+
+.sobremi .fila .izquierda .strong {
+  margin: 5px 0;
+}
+
+.sobremi .fila .izquierda li {
+  font-size: 24px;
+}
+
+.sobremi .fila .derecha {
+  align-content: center;
+  width: 390px;
+  height: 390px;
+  flex-wrap: wrap;
+
+}
+
+.sobremi .fila .mapay img {
+  width: 250px;
+  height: 250px;
+}
+
+.sobremi .fila .col .mapay:hover, .sobremi .fila .col .mapay img:hover {
+  width: 260px;
+  height: 260px;
+  filter: opacity(0.7) drop-shadow(0 0 0 #1CB698);
+}
+
+.habilidades {
+  margin: 600px 0;
+  width: 390px;
+}
+
+.habilidades .contenido-seccion {
+  width: 390px;
+}
+
+.habilidades .cuadro{
+  flex-direction: column;
+  padding: auto;
+}
+
+.habilidades .cuadro .subtitulo {
+  text-align: left;
+}
+
+.habilidades .cuadro .fila .columna {
+  text-align: right;
+}
+
+.habilidades .cuadro .fila .columna .col {
+  margin-left: 50px;
+}
+
+.habilidades .cuadro .fila .columna .col .skills {
+position: relative;
+  right: 100px;
+  text-align: right;
+}
+
+.habilidades .cuadro .fila .columna .col .ladito {
+  position: relative;
+  right: 100px;
+}
+
+.habilidades .cuadro .fila .columna .verde1 {
+  position: relative;
+  right: 100px;
+}
+
+.habilidades .cuadro .fila .columna .verde2 {
+  position: relative;
+  right: 50px;
+}
+
+.todo {
+flex-wrap: none;
+}
+.cursoGoogle, .cursoArg, .cursoTicmas {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.cursos .titulo {
+  margin-bottom: 20px;
+}
+
+.cursos button {
+  display: none;
+}
+
+.contacto {
+  width: 390px;
+}
+
+.contacto .titulos {
+  width: 370px;
+}
+
+.contacto .fila {
+  width: 390px;
+  margin-left: 15px;
+}
+
+.contacto .boton {
+  position: relative;
+  right: 130px;
+  top: 100px;
+}
+
+footer {
+  margin-top: -20px;
+}
+
+}
+
+
+
+
+/*@media screen and (max-width:400px) {
+.sobremi .fila {
+flex-direction: column;
+}
+  }*/
+
+
+
+
